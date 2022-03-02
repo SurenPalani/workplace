@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+
+public class List_ofList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<ArrayList<Integer> > arrLL = new ArrayList<ArrayList<Integer> >();
+		arrLL.add(new ArrayList<Integer>());
+		arrLL.get(0).add(1,4);
+		arrLL.get(1).add(1,3);
+		arrLL.get(2).add(2,6);
+		
+		System.out.println(arrLL.get(0));
+	}
+
+}

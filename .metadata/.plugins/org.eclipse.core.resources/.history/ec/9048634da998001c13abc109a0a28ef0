@@ -1,0 +1,10 @@
+package string_words_samp;
+
+public class string_words_test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package deque_samp;
+
+public class dequeue_samp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
