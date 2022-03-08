@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -27,9 +29,11 @@ public class List_ofList {
 		/*
 		 * list.get(1).add(1,3); list.get(2).add(2,6);
 		 */
+		Set<Integer> hs = arr2.stream().flatMap(n -> n.stream()).sorted((s1,s2)->s2.compareTo(s1)).collect(Collectors.toSet());
 		List<Integer> list = arr2.stream().flatMap(n -> n.stream()).sorted((s1,s2)->s2.compareTo(s1)).collect(Collectors.toList());
 		//List<Integer> list = arr2.stream().flatMap(n -> n.stream()).sorted().collect(Collectors.toList());
 		System.out.println(list);
+		System.out.println(hs);
 		
 		ArrayList<Integer> list2 = new ArrayList(list);
 		Iterator<Integer> itr = list2.iterator();

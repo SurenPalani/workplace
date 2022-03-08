@@ -6,6 +6,7 @@ public class UserDetails {
 	private Integer age;
 	private String address;
 	
+	
 	public String getName() {
 		return name;
 	}
@@ -27,7 +28,7 @@ public class UserDetails {
 
 	public String toString()
 	{
-		return this.name + " " + this.age + " " + this.address;
+		return this.name + ", " + this.age + ", " + this.address;
 	}
 	
 }

@@ -20,6 +20,7 @@ public class sampController {
 		 */
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("Details", ud);
+		mav.addObject("SampleText", "Sample line to check");
 		mav.setViewName("samp");
 		return mav;
 		/*

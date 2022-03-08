@@ -5,6 +5,8 @@
 <h1>Samp web page </h1>
 
 ${Details}
+<br/>
+${SampleText}
 
 </body>
 </html>
