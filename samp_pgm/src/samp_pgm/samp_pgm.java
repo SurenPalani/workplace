@@ -60,5 +60,20 @@ public class samp_pgm {
 		
 	}
 
-
+    for(List<Integer> list: arr)
+    {  
+        for(Integer inner: list)
+        {        
+            if(i==j){
+            temp1 = temp1 + inner;
+         }
+            if((list.size()-1 - j - i)==0){
+                temp2 = temp2+inner;
+            }
+            j=j+1;
+        }
+        i = i+1;
+        j=0;
+    }
+    
 }
